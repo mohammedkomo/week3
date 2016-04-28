@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Water Tanker Booking </title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="themes/app2.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <script src="Reservation.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+ 
+</head>
+<body >
+
+
+<!--      customer regsiter  -->
+
+<div data-role="page" id="home" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+   <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+         <h2> Water Tanker Booking </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;">Reservation</h2>
+   <label for="tbid">Schudle ID </label>
+    <input type="text" name="tbid" id="tbid" readonly="true">
+   <label for="tbodate">Date </label>
+    <input type="text" name="tbodate" id="tbodate"  readonly="true">
+   <label for="tbarea">Area Name</label>
+    <input type="text" name="tbarea" id="tbarea" readonly="true">
+   <label for="tbtype">Tank Type </label>
+    <input type="text" name="tbtype" id="tbtype"  readonly="true">
+    <label for="tbinterval">Interval </label>
+    <input type="text" name="tbinterval" id="tbinterval"  readonly="true">
+  <label for="tbprice">Price </label>
+    <input type="text" name="tbprice" id="tbprice"  readonly="true">
+   <label for="tbname">Card Name </label>
+    <input type="text" name="tbname" id="tbname"  maxlength="50">
+ <label for="tbcard">Card Number </label>
+    <input type="text" name="tbcard" id="tbcard"  maxlength="16">
+ <label for="tbedate">Expire Date </label>
+    <input type="date" name="tbedate" id="tbedate"  maxlength="50">
+ <label for="tbpin">pin code </label>
+    <input type="text" name="tbpin" id="tbpin"  maxlength="3">
+  <a href="javascript:Send()"   class="ui-btn ui-corner-all"style="background-color:#0ec2db; color:White; margin:10px"  >Send</a>
+   
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
